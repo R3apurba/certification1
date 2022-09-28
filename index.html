@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>ALPHAVERSE Survey Form</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">ALPHAVERSE Survey Form</h1>
+  <p id="description">Please fill out this form and help us improve</p>
+  <form id="survey-form" action="https://register-demo.freecodecamp.org">
+  <fieldset>
+  <label id="name-label">NAME <input required type="text" id='name' placeholder=" Enter your name " /></label>
+  <label id="email-label"> EMAIL<input required type="email" id="email" placeholder=" Enter your email id"/></label>
+  <label id="number-label">AGE<input required type="number" id="number" min="13" max="120" placeholder="Enter your age (years)" /></label>
+  </fieldset>
+  <fieldset>
+<label>Which option best describes your current role ?
+ <select id="dropdown">
+   <option value="">(select one)</option>
+   <option value=1>Student</option>
+   <option value=2>Full time job</option>
+   <option value=3>Currently unemployed</option>
+   <option value=4>Prefer not to say</option>
+  </select> 
+</label>
+</fieldset>
+<fieldset>
+<label>Would you recommend ALPHAVERSE to friends ?
+  <label><input type="radio" name="recommend" value=1 >Definitely 
+  </label>
+  <label><input type="radio" name="recommend" value=2> Maybe </label>
+  <label><input type= "radio" name="recommend" value=3> Not sure</label>
+  </fieldset>
+  <label>
+  <input required type="checkbox" value=1> I Accept the <a href="https://www.freecodecamp.org/news/terms-of-service/"><em>Terms & Conditions</em></a>
+  </label>
+  <label>
+    <input type="checkbox" value=0> I do not Accept
+    </label>
+  <label>
+    What more would you like to say :
+    <textarea id="suggest" rows="3" cols="30" placeholder="I would like to say... " >
+    </textarea>
+    </label>
+  <input type="submit" id="submit"/>
+    </form>
+    <footer>
+      COPYRIGHT ALPHA 2022
+    </footer>
+</body>
+</html>
